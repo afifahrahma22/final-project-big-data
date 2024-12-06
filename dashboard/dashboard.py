@@ -4,7 +4,7 @@ import seaborn as sns
 import pandas as pd
 from io import BytesIO
 
-sns.set(style='dark')
+# sns.set(style='dark')
 # Color palette
 color_palette = sns.color_palette("ch:s=.25,rot=-.25")
 
