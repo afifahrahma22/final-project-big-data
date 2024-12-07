@@ -50,11 +50,11 @@ def chart_for_cat(df, cat):
     # hasil EDA setiap fitur
     if cat == 'property_type':
         st.markdown("""
-        Terdapat **19 kategori** pada fitur Property Type. Dari data persentase dapat disimpulkan bahwa sebagian besar orang lebih memilih memesan **kamar apartment (66.1%)** atau **rumah (22.3%)**.
+        Terdapat **19 kategori** pada fitur Property Type. Dari data persentase dapat disimpulkan bahwa sebagian besar properti berbentuk **kamar apartment (66.1%)** atau **rumah (22.3%)**.
         """)
     elif cat == 'room_type':
         st.markdown("""
-        Terdapat **3 kategori** pada fitur Room Type. Dari data persentase dapat disimpulkan bahwa sebagian besar orang lebih memilih memesan **entire home/apt (55.7%)** atau **private room (41.3%)**.
+        Terdapat **3 kategori** pada fitur Room Type. Dari data persentase dapat disimpulkan bahwa sebagian besar properti berbentuk **entire home/apt (55.7%)** atau **private room (41.3%)**.
         """)
     elif cat == 'bed_type':
         st.markdown("""
@@ -62,11 +62,11 @@ def chart_for_cat(df, cat):
         """)
     elif cat == 'cancellation_policy':
         st.markdown("""
-        Terdapat **4 kategori** pada fitur Cancellation Policy, secara berurutan dari jumlahnya yang paling banyak yaitu Strict, Flexible, Moderate, dan Super Strict. Dari data persentase dapat disimpulkan bahwa sebagian besar property memiliki aturan pembatalan yang cukup ketat atau **strict (43.7%)**. Namun, terdapat beberapa property yang memberlakukan aturan pembatalan yang **flexible (30.4%)** dan **moderate(25.7%)**. Properti yang menetapkan aturan pembatalan** sangat ketat** hanya sebagian kecil dari keseluruhan properti yang ada **(0.2%)**.
+        Terdapat **4 kategori** pada fitur Cancellation Policy, secara berurutan dari jumlahnya yang paling banyak yaitu Strict, Flexible, Moderate, dan Super Strict. Dari data persentase dapat disimpulkan bahwa sebagian besar property memiliki aturan pembatalan yang cukup ketat atau **strict (43.7%)**. Namun, terdapat beberapa property yang memberlakukan aturan pembatalan yang **flexible (30.4%)** dan **moderate(25.7%)**. Properti yang menetapkan aturan pembatalan **sangat ketat** hanya sebagian kecil dari keseluruhan properti yang ada **(0.2%)**.
         """)
     elif cat == 'city':
         st.markdown("""
-        Pada dataset Airbnb Price, terdapat **6 kategori** kota yang dianalisis, secara berurutan dari jumlahnya yang paling banyak yaitu NYC (New York City), LA (Los Angeles), SF (San Fransisco), DC (District of Columbia), Chicago, dan Boston. Dari data persentase dapat disimpulkan bahwa sebagian besar property berada di kota **NYC (43.6%)** dan LA **(30.3%)**.
+        Pada dataset Airbnb Price, terdapat **6 kategori** kota yang dianalisis, secara berurutan dari jumlahnya yang paling banyak yaitu NYC (New York City), LA (Los Angeles), SF (San Francisco), DC (District of Columbia), Chicago, dan Boston. Dari data persentase dapat disimpulkan bahwa sebagian besar property berada di kota **NYC (43.6%)** dan LA **(30.3%)**.
         """)
     elif cat == 'host_identity_verified':
         st.markdown(""""
@@ -130,7 +130,7 @@ def chart_for_cat(df, cat):
         """)
     elif cat == 'city':
         st.markdown("""
-        Dari visualisasi tersebut diketahui bahwa properti yang berada di kota **San Fransisco** memiliki median yang **paling tinggi**. Hal ini menunjukkan bahwa properti yang berada di San Fransisco memiliki harga yang cenderung tinggi jika dibandingkan dengan properti di kota-kota lain.
+        Dari visualisasi tersebut diketahui bahwa properti yang berada di kota **San Francisco** memiliki median yang **paling tinggi**. Hal ini menunjukkan bahwa properti yang berada di San Francisco memiliki harga yang cenderung tinggi jika dibandingkan dengan properti di kota-kota lain.
         """)
     elif cat == 'host_identity_verified':
         st.markdown(""""
@@ -205,39 +205,39 @@ def chart_for_num(df, num):
     # hasil EDA setiap fitur
     if num == 'log_price':
         st.markdown("""
-        Terlihat distribusi yang cenderung **condong ke kanan (right skewed)**. Hal tersebut menunjukkan banyak properti dengan harga realtif rendah, namun ada beberapa properti dengan harga yang sangat tinggi. Dari visualisasi boxplot diketahui apakah fitur tersebut memiliki outlier.
+        Terlihat distribusi yang cenderung **condong ke kanan (right skewed)**. Hal tersebut menunjukkan banyak properti dengan harga relatif rendah, namun ada beberapa properti dengan harga yang sangat tinggi. Dari visualisasi boxplot diketahui bahwa fitur ini memiliki outlier.
         """)
     elif num == 'amenities':
         st.markdown("""
-        Sebagian besar properti memiliki jumlah fasilitas yang relatif sedikit, namun terdapat beberapa properti dengan jumlah yang sangat banyak. Hal ini menunjukkan adanya variasi yang cukup besar dalam hal fasilitas yang ditawarkan oleh setiap properti. Dari visualisasi boxplot diketahui apakah fitur tersebut memiliki outlier.
+        Sebagian besar properti memiliki jumlah fasilitas yang relatif sedikit, namun terdapat beberapa properti dengan jumlah yang sangat banyak. Hal ini menunjukkan adanya variasi yang cukup besar dalam hal fasilitas yang ditawarkan oleh setiap properti. Dari visualisasi boxplot diketahui bahwa fitur ini memiliki outlier.
         """)
     elif num == 'accommodates':
         st.markdown("""
-        Sebagian besar properti dapat menampung jumlah tamu yang relatif sedikit. Hal ini menunjukkan bahwa banyak properti yang cocok untuk individu atau kelompok kecil.
+        Sebagian besar properti dapat menampung jumlah tamu yang relatif sedikit. Hal ini menunjukkan bahwa banyak properti yang cocok untuk individu atau kelompok kecil. Dari visualisasi boxplot diketahui bahwa fitur ini memiliki outlier.
         """)
     elif num == 'bathrooms':
         st.markdown("""
-        Sebagian besar properti memiliki jumlah kamar mandi yang sedikit. Visualisasi histogram tersebut menunjukkan properti yang memiliki satu atau dua kamar mandi adalah yang paling umum.
+        Sebagian besar properti memiliki jumlah kamar mandi yang sedikit. Visualisasi histogram tersebut menunjukkan properti yang memiliki satu atau dua kamar mandi adalah yang paling umum. Dari visualisasi boxplot diketahui bahwa fitur ini memiliki outlier.
         """)
     elif num == 'host_response_rate':
         st.markdown("""
-        Sebagian besar pemilik properti memiliki tingkat respons yang tinggi.
+        Sebagian besar pemilik properti memiliki tingkat respons yang tinggi. Dari visualisasi boxplot diketahui bahwa fitur ini memiliki outlier.
         """)
     elif num == 'number_of_reviews':
         st.markdown("""
-        Sebagian besar properti memiliki jumlah ulasan yang relatif sedikit. Hal tersebut mengindikasikan beberapa properti mungkin merupakan properti baru atau kurang populer.
+        Sebagian besar properti memiliki jumlah ulasan yang relatif sedikit. Hal tersebut mengindikasikan beberapa properti mungkin merupakan properti baru atau kurang populer. Dari visualisasi boxplot diketahui bahwa fitur ini memiliki outlier.
         """)
     elif num == 'review_scores_rating':
         st.markdown("""
-        Sebagian besar properti memiliki skor ulasan yang cukup tinggi. Hal ini menunjukkan bahwa kualitas properti secara umum cukup baik.  
+        Sebagian besar properti memiliki skor ulasan yang cukup tinggi. Hal ini menunjukkan bahwa kualitas properti secara umum cukup baik. Dari visualisasi boxplot diketahui bahwa fitur ini memiliki outlier.
         """)
     elif num == 'bedrooms':
         st.markdown("""
-        Sebagian besar properti memiliki jumlah kamar tidur yang sedikit. Hal ini sejalan dengan kapasitas properti yang juga cukup rendah dan cocok untuk menampung individu atau kelompok kecil.
+        Sebagian besar properti memiliki jumlah kamar tidur yang sedikit. Hal ini sejalan dengan kapasitas properti yang juga cukup rendah dan cocok untuk menampung individu atau kelompok kecil. Dari visualisasi boxplot diketahui bahwa fitur ini memiliki outlier.
         """)
     else: # num = beds
         st.markdown("""
-        Sebagian besar properti memiliki jumlah tempat tidur yang sedikit. Hal ini juga sejalan dengan temuan sebelumnya tentang jumlah kamar tidur, jumlah kamar mandi, dan kapasitas tamu.  
+        Sebagian besar properti memiliki jumlah tempat tidur yang sedikit. Hal ini juga sejalan dengan temuan sebelumnya tentang jumlah kamar tidur, jumlah kamar mandi, dan kapasitas tamu. Dari visualisasi boxplot diketahui bahwa fitur ini memiliki outlier.
         """)
 
     # deskripsi violion chart
@@ -289,7 +289,7 @@ def chart_for_num(df, num):
                     return None
                 elif num == 'amenities':
                     st.markdown("""
-                    Nilai tersebut menunjukkan adanya **korelasi positif lemah** dengan log_price. Hal ini menunjukkan bahwa semakin banyak fasilitas yang tersedia pada suatu properti, harganya akan cendrung sedikit lebih tinggi. Namun, hubungan ini tidak terlalu kuat.
+                    Nilai tersebut menunjukkan adanya **korelasi positif lemah** dengan log_price. Hal ini menunjukkan bahwa semakin banyak fasilitas yang tersedia pada suatu properti, harganya akan cenderung sedikit lebih tinggi. Namun, hubungan ini tidak terlalu kuat.
                     """)
                 elif num == 'accommodates':
                     st.markdown("""
@@ -398,7 +398,7 @@ def page2():
         'Metrik': ['MAE', 'MAE/Mean Ratio', 'Correctness'],
         'LinearRegression': [0.3576416411972841, '7.48%', '92.52%'],
         'DesionTreeRegressor': [0.3644265617728542, '7.62%', '92.38%'],
-        'RandomForestRegressor': [0.36003562996445976, '7.53%', '92.47%']
+        'RandomForestRegressor': [0.36003562996445976, '7.53%', '92.49%']
     }
     df_correct = pd.DataFrame(correctness)
     st.dataframe(df_correct)
